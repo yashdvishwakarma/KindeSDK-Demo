@@ -1,0 +1,22 @@
++-------------------+
+|  Your App         |
++-------------------+
+          |
+          v
++-------------------+
+| Kinde SDK Wrapper |
+|  (Authenticate)   |
++-------------------+
+          |
+   ---------------------
+   |                   |
+   v                   v
+Success ✅        Failure ❌
+(token returned)  (exception thrown)
+   |                   |
+   v                   v
++-------------------+  +---------------------------------+
+| Token available   |  | KindeAuthenticationException    |
+| for use           |  | - Clear error message           |
+|                   |  | - Inner exception details       |
++-------------------+  +---------------------------------+
